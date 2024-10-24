@@ -1,9 +1,11 @@
 body {
     background: linear-gradient(90deg, #161515, rgb(54, 0, 54));
+    transition: background 0.5s ease-in-out;
 }
 
 .card {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .weather-icon-link:hover img {
@@ -16,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .weather-image {
@@ -48,4 +51,47 @@ hr {
     100% {
         transform: translateY(0);
     }
+}
+
+/* Day style */
+.day-mode {
+    background: linear-gradient(90deg, #f5f5f5, #ffcccc);
+}
+
+.day-card {
+    background: #fff;
+    color: #000;
+}
+
+.day-footer {
+    background: #000;
+    color: #fff;
+}
+
+/* Night style */
+.night-mode {
+    background: linear-gradient(90deg, #161515, rgb(54, 0, 54));
+}
+
+.night-card {
+    background: #000;
+    color: #fff;
+}
+
+.night-footer {
+    background: #000;
+    color: #fff;
+}
+
+/* Script style */
+
+.card-body,
+.card-footer,
+#mainImg {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
 }
