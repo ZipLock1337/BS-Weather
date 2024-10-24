@@ -19,38 +19,40 @@
                 <div class="card bg-dark text-white">
                     <div class="card-body">
                         <h5><small>City:</small> Kyiv</h5>
-                        <p class="card-text">Time: 22:08 PM</p>
+                        <p id="time" class="card-text">Time: 22:08 PM</p>
 
                         <div style="display: flex; align-items: center;">
-                            <img src="Moon_Night-512.webp" alt="Weather Icon"
+                            <img id="mainImg" src="Moon_Night-512.webp" alt="Weather Icon"
                                 style="width: 50px; height: 50px; margin-right: 10px;">
-                            <span style="font-size: 24px; font-weight: bold;">23°C</span>
+                            <span id="mainTemperature" style="font-size: 24px; font-weight: bold;">23°C</span>
                         </div>
 
                         <div style="float: right; margin-top: -40px;">
-                            <a class="weather-icon-link" onclick="switchFunction()" href="#"><img src="moon_img.png"
-                                    alt="Weather Icon" style="width: 70px; height: 70px; margin-left: 10px;">
+                            <a class="weather-icon-link" onclick="switchFunction()" href="#"><img id="switchImg"
+                                    src="moon_img.png" alt="Weather Icon"
+                                    style="width: 70px; height: 70px; margin-left: 10px; transition: all 0.2s ease;">
                             </a>
                         </div>
-                        <p class="card-text">Weather: Clear Night</p>
+                        <p id="mainDesc" class="card-text">Weather: Clear Night</p>
                     </div>
                     <div class="card-footer bg-white text-dark">
                         <img src="clouds.png" alt="Monday Image" class="weather-image">
-                        <h5>Monday: Clear, 25°C</h5>
+                        <h5 id="footerText">Monday: Clear, 25°C</h5>
                         <hr>
 
                         <img src="rain.png" alt="Tuesday Image" class="weather-image">
-                        <h5>Tuesday: Rainy and cool, 14°C</h5>
+                        <h5 id="footerText">Tuesday: Rainy and cool, 14°C</h5>
                         <hr>
 
                         <img src="sunny.png" alt="Wednesday Image" class="weather-image">
-                        <h5>Wednesday: Sunny, 28°C</h5>
+                        <h5 id="footerText">Wednesday: Sunny, 28°C</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="script.js"></script>
 
 </body>
 
